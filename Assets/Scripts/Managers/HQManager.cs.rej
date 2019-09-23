@@ -1,0 +1,11 @@
+diff a/Assets/Scripts/Managers/HQManager.cs b/Assets/Scripts/Managers/HQManager.cs	(rejected hunks)
+@@ -42,7 +42,8 @@
+     {
+         if (ContractorsSpawned < MaxContractors)
+         {
+-            GameObject newContractor = Instantiate(ContractorPrefab, PointToSpawn.position, Quaternion.identity, transform.parent.parent);
++            //TODO position of spawn point
++            GameObject newContractor = Instantiate(ContractorPrefab, PointToSpawn.localPosition, Quaternion.identity, transform.parent.parent.parent.parent);
+             MoveTo script = newContractor.GetComponent<MoveTo>();
+             if (script)
+             {
