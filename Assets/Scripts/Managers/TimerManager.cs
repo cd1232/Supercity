@@ -207,7 +207,7 @@ public class TimerManager : MonoBehaviour
                 RenderSettings.skybox.SetColor("_Tint", lerpColor);
             }
 
-            if (!bHasDayFinished && time.ToShortTimeString().Equals("12:00 AM") || time.ToShortTimeString().Equals("12:15AM"))
+            if (!bHasDayFinished && time.ToShortTimeString().Equals("12:00 a.m.") || time.ToShortTimeString().Equals("12:15 a.m."))
             {
                 bHasDayFinished = true;
 
